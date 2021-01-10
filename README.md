@@ -1,7 +1,7 @@
 # pope-clicker-unityedition
 Pope clicker by Jacekpoz but made in Unity
 
-Pope Clicker recreated in Unity, because of problems with files, this repository will only contain assets with code, meta packages and releases.
+Pope Clicker recreated in Unity.
 
 This game is recreation of Jacekpoz's project with the same title: https://github.com/jacekpoz/pope-clicker
 
