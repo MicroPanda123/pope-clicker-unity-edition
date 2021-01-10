@@ -30,7 +30,7 @@ public class PointsHandler : MonoBehaviour
         Debug.Log(PointsPerSecond);
         Debug.Log(Points);
     }
-    public static void BuyPPC(int Cost, float Value)
+    public static void BuyPpc(int Cost, float Value)
     {
         if (Points >= Cost)
         {
@@ -38,7 +38,7 @@ public class PointsHandler : MonoBehaviour
             PointsPerClick += Value;
         }
     }
-    public static void BuyPPS(int Cost, float Value)
+    public static void BuyPps(int Cost, float Value)
     {
         if (Points >= Cost)
         {

@@ -16,16 +16,16 @@ public class popescript : MonoBehaviour
                 //Debug.Log(PointsHandler.Points);
                 break;
             case "kremowka":
-                PointsHandler.BuyPPS(5, 0.01f);
+                PointsHandler.BuyPps(5, 0.01f);
                 break;
             case "sculpture":
-                PointsHandler.BuyPPS(8, 0.1f);
+                PointsHandler.BuyPps(8, 0.1f);
                 break;
             case "mary":
-                PointsHandler.BuyPPS(11, 0.5f);
+                PointsHandler.BuyPps(11, 0.5f);
                 break;
             case "spinach":
-                PointsHandler.BuyPPS(14, 1f);
+                PointsHandler.BuyPps(14, 1f);
                 break;
             default:
                 Debug.Log("Invalid name");
