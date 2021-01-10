@@ -6,45 +6,54 @@ using UnityEngine.UI;
 
 public class PointsHandler : MonoBehaviour
 {
-    public static float Points = 0;
-    public static float PointsPerClick = 1;
-    public static float PointsPerSecond = 0;
-    public GameObject PointsDisplay;
-    public GameObject PointsPerClickDisplay;
-    public GameObject PointsPerSecondDisplay;
+    private static float points = 0;
 
+    public static float Points
+    {
+        get { return points; }
+        set { points = value;  }
+    }
+
+    private static float pointsPerClick = 1;
+    public static float PointsPerClick
+    {
+        get { return pointsPerClick; }
+        set { pointsPerClick = value;  }
+    }
+    private static float pointsPerSecond = 0;
+
+    public static float PointsPerSecond
+    {
+        get { return pointsPerSecond; }
+        set { pointsPerSecond = value; }
+    }
     void Start()
     {
         InvokeRepeating("AdmitPointsPerSecond", 0.1f, 0.1f);
     }
-
-    void Update()
-    {
-        PointsDisplay.GetComponent<Text>().text = "Punkty: " + Math.Round(Points, 2);
-        PointsPerClickDisplay.GetComponent<Text>().text = "Punkty za klikniecie: " + PointsPerClick;
-        PointsPerSecondDisplay.GetComponent<Text>().text = "Punkty co sekunde: " + Math.Round(PointsPerSecond*10, 2);
-    }
-    void AdmitPointsPerSecond()
+    void AdmitPointsPerSecond() //Submits points per second
     {
         Points += PointsPerSecond;
         Debug.Log(PointsPerSecond);
         Debug.Log(Points);
     }
-    public static void BuyPpc(int Cost, float Value)
+    public static void BuyPpc(float cost, float value) //Increases Points Per Click value 
     {
-        if (Points >= Cost)
+        if (Points >= cost)
         {
-            Points -= Cost;
-            PointsPerClick += Value;
+            Points -= cost;
+            PointsPerClick += value;
         }
     }
-    public static void BuyPps(int Cost, float Value)
+    public static void BuyPps(float cost, float value, int upgrade) //Increases Points Per Second value
     {
-        if (Points >= Cost)
+        if (Points >= cost)
         {
-            Points -= Cost;
-            PointsPerSecond += Value;
+            Points -= cost;
+            PointsPerSecond += value;
             Debug.Log(PointsPerSecond);
+            UAD.UpgradeArray[upgrade] = UAD.UpgradeArray[upgrade] * 1.3f;
+            UAD.UpdateUpgradesText(upgrade);
         }
     }
 }

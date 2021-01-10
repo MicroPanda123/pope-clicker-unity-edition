@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 273862764}
   m_Layer: 0
   m_Name: SzpinakText
-  m_TagString: Untagged
+  m_TagString: szpinak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 734, y: 140}
+  m_AnchoredPosition: {x: 777, y: 139}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273862764
@@ -363,6 +363,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1821520091}
+        m_TargetAssemblyTypeName: UAD, Assembly-CSharp
+        m_MethodName: FindText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &390107324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,7 +431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &462178681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +631,7 @@ GameObject:
   - component: {fileID: 529869844}
   m_Layer: 0
   m_Name: KremowkaText
-  m_TagString: Untagged
+  m_TagString: kremowka
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -640,7 +652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145, y: 140}
+  m_AnchoredPosition: {x: 97, y: 133}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529869844
@@ -712,7 +724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531263126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1658707, y: -4.398034, z: 1036.4988}
+  m_LocalPosition: {x: 1.05, y: -4.48, z: 1036.4988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 846400698}
@@ -834,7 +846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 551659932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.5641403, y: -4.2380304, z: 1036.4988}
+  m_LocalPosition: {x: -6.62, y: -4.44, z: 1036.4988}
   m_LocalScale: {x: 0.3184539, y: 0.45366806, z: 0.25356632}
   m_Children: []
   m_Father: {fileID: 846400698}
@@ -1165,7 +1177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774702040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.504143, y: -4.548028, z: 1036.4988}
+  m_LocalPosition: {x: -10.39, y: -4.548028, z: 1036.4988}
   m_LocalScale: {x: 0.3597, y: 0.3597, z: 0.3597}
   m_Children: []
   m_Father: {fileID: 846400698}
@@ -1275,7 +1287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &846400698
 Transform:
   m_ObjectHideFlags: 0
@@ -1309,7 +1321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &877896491
 Transform:
   m_ObjectHideFlags: 0
@@ -1441,7 +1453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344, y: 169}
+  m_AnchoredPosition: {x: -329, y: 183}
   m_SizeDelta: {x: 164.1694, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1351671637
@@ -1513,7 +1525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661118150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6741257, y: -4.2280207, z: 1036.4988}
+  m_LocalPosition: {x: -2.71, y: -4.37, z: 1036.4988}
   m_LocalScale: {x: 0.6795035, y: 0.69014466, z: 0.6955}
   m_Children: []
   m_Father: {fileID: 846400698}
@@ -1621,7 +1633,7 @@ GameObject:
   - component: {fileID: 1723433830}
   m_Layer: 0
   m_Name: MarysiaText
-  m_TagString: Untagged
+  m_TagString: marysia
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1642,7 +1654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 539, y: 146}
+  m_AnchoredPosition: {x: 557, y: 138}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723433830
@@ -1658,7 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1698,6 +1710,7 @@ GameObject:
   - component: {fileID: 1821520089}
   - component: {fileID: 1821520088}
   - component: {fileID: 1821520090}
+  - component: {fileID: 1821520091}
   m_Layer: 0
   m_Name: ScriptsHandler
   m_TagString: Untagged
@@ -1717,9 +1730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d794c2cec6a0c54fa4df498ef426ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointsDisplay: {fileID: 1351671635}
-  PointsPerClickDisplay: {fileID: 1934923494}
-  PointsPerSecondDisplay: {fileID: 1987756785}
 --- !u!4 &1821520089
 Transform:
   m_ObjectHideFlags: 0
@@ -1749,6 +1759,21 @@ MonoBehaviour:
   Upgrades: {fileID: 877896488}
   Upgrades_Outside: {fileID: 846400697}
   pope: {fileID: 462178680}
+--- !u!114 &1821520091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821520087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cf49346ce0ced438de3b2ddbc7a48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointsDisplay: {fileID: 1351671635}
+  PointsPerClickDisplay: {fileID: 1934923494}
+  PointsPerSecondDisplay: {fileID: 1987756785}
 --- !u!1 &1886680657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.0047, y: 139}
+  m_AnchoredPosition: {x: -329.0047, y: 153}
   m_SizeDelta: {x: 164.1694, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1987756785
@@ -2008,7 +2033,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -344.0047, y: 109}
+  m_AnchoredPosition: {x: -329.0047, y: 123}
   m_SizeDelta: {x: 164.1694, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2114058568
@@ -2024,7 +2049,7 @@ GameObject:
   - component: {fileID: 2114058570}
   m_Layer: 0
   m_Name: RzezbaText
-  m_TagString: Untagged
+  m_TagString: rzezba
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2045,7 +2070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 343, y: 141.18}
+  m_AnchoredPosition: {x: 322, y: 130}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2114058570

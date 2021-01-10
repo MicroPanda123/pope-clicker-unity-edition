@@ -1,31 +1,32 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class popescript : MonoBehaviour
 {
-
     void OnMouseDown()
     {
         //Debug.Log("Papeiz");
         Debug.Log(name);
-        switch (name)
+        switch (name) //Detects what object was clicked and determines what to do
         {
             case "pope":
                 PointsHandler.Points += PointsHandler.PointsPerClick;
-                //Debug.Log(PointsHandler.Points);
+                Debug.Log(PointsHandler.Points);
                 break;
             case "kremowka":
-                PointsHandler.BuyPps(5, 0.01f);
+                PointsHandler.BuyPps(UAD.UpgradeArray[0], 0.01f, 0);
                 break;
             case "sculpture":
-                PointsHandler.BuyPps(8, 0.1f);
+                PointsHandler.BuyPps(UAD.UpgradeArray[1], 0.1f, 1);
                 break;
             case "mary":
-                PointsHandler.BuyPps(11, 0.5f);
+                PointsHandler.BuyPps(UAD.UpgradeArray[2], 0.5f, 2);
                 break;
             case "spinach":
-                PointsHandler.BuyPps(14, 1f);
+                PointsHandler.BuyPps(UAD.UpgradeArray[3], 1f, 3);
                 break;
             default:
                 Debug.Log("Invalid name");
