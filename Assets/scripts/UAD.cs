@@ -11,13 +11,15 @@ public class UAD : MonoBehaviour //UAD stands for UpgradesAndDisplay
     public GameObject PointsDisplay;
     public GameObject PointsPerClickDisplay;
     public GameObject PointsPerSecondDisplay;
+    public GameObject updatesText;
     static GameObject kremowkaText;
     static GameObject sculptureText; 
     static GameObject maryText;
     static GameObject spinachText;
+
     private static float[] upgradeArray = {5, 8, 11, 14};
 
-    public void FindText()
+    void Start()
     {
         kremowkaText = GameObject.FindWithTag("kremowka");
         Debug.Log(kremowkaText.name);
@@ -27,6 +29,7 @@ public class UAD : MonoBehaviour //UAD stands for UpgradesAndDisplay
         Debug.Log(maryText.name);
         spinachText = GameObject.FindWithTag("szpinak");
         Debug.Log(spinachText.name);
+        updatesText.SetActive(false);
     }
 
     public static float[] UpgradeArray
