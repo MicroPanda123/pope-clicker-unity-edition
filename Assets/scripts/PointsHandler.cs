@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class PointsHandler : MonoBehaviour
 {
-    private static float points = 0;
+    private static float _points = 0;
 
     public static float Points
     {
-        get { return points; }
-        set { points = value;  }
+        get { return _points; }
+        set { _points = value;  }
     }
 
-    private static float pointsPerClick = 1;
+    private static float _pointsPerClick = 1;
     public static float PointsPerClick
     {
-        get { return pointsPerClick; }
-        set { pointsPerClick = value;  }
+        get { return _pointsPerClick; }
+        set { _pointsPerClick = value;  }
     }
     private static float pointsPerSecond = 0;
 
@@ -27,11 +27,13 @@ public class PointsHandler : MonoBehaviour
         get { return pointsPerSecond; }
         set { pointsPerSecond = value; }
     }
-    void Start()
+
+    private void Start()
     {
         InvokeRepeating("AdmitPointsPerSecond", 0.1f, 0.1f);
     }
-    void AdmitPointsPerSecond() //Submits points per second
+
+    private void AdmitPointsPerSecond() //Submits points per second
     {
         Points += PointsPerSecond;
         Debug.Log(PointsPerSecond);
@@ -39,21 +41,17 @@ public class PointsHandler : MonoBehaviour
     }
     public static void BuyPpc(float cost, float value) //Increases Points Per Click value 
     {
-        if (Points >= cost)
-        {
-            Points -= cost;
-            PointsPerClick += value;
-        }
+        if (!(Points >= cost)) return;
+        Points -= cost;
+        PointsPerClick += value;
     }
     public static void BuyPps(float cost, float value, int upgrade) //Increases Points Per Second value
     {
-        if (Points >= cost)
-        {
-            Points -= cost;
-            PointsPerSecond += value;
-            Debug.Log(PointsPerSecond);
-            UAD.UpgradeArray[upgrade] = UAD.UpgradeArray[upgrade] * 1.3f;
-            UAD.UpdateUpgradesText(upgrade);
-        }
+        if (!(Points >= cost)) return;
+        Points -= cost;
+        PointsPerSecond += value;
+        Debug.Log(PointsPerSecond);
+        UAD.UpgradeArray[upgrade] = UAD.UpgradeArray[upgrade] * 1.3f;
+        UAD.UpdateUpgradesText(upgrade);
     }
 }
