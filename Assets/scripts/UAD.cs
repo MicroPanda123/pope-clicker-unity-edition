@@ -40,9 +40,9 @@ public class UAD : MonoBehaviour //UAD stands for UpgradesAndDisplay
     
     void Update()
     {
-        PointsDisplay.GetComponent<Text>().text = "Punkty: " + Math.Round(PointsHandler.Points, 2);
+        PointsDisplay.GetComponent<Text>().text = LanguageHandler.PointsLangHandler + Math.Round(PointsHandler.Points, 2);
         PointsPerClickDisplay.GetComponent<Text>().text = "Punkty za klikniecie: " + PointsHandler.PointsPerClick;
-        PointsPerSecondDisplay.GetComponent<Text>().text = "Punkty co sekunde: " + Math.Round(PointsHandler.PointsPerSecond*10, 2);
+        PointsPerSecondDisplay.GetComponent<Text>().text = LanguageHandler.PointsPerSecondLangHandler + Math.Round(PointsHandler.PointsPerSecond*10, 2);
     }
 
     public static void UpdateUpgradesText(int upgrade)
